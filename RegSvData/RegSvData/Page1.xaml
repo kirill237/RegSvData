@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegSvData.Page1">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <!---->
+        <Label Text="Ул" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Label Text="колонка" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="5"/>
+        <Picker x:Name="picker_kol" SelectedIndexChanged="picker_kol_SelectedIndexChanged" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="5" >
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+            </Picker.Items>
+        </Picker>
+        
+        <Entry TextChanged="KolVoTextChanged" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="5"/>
+        
+       <Picker x:Name="picker_top" SelectedIndexChanged="picker_top_SelectedIndexChanged" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="5" >
+            <Picker.Items>
+                <x:String>AE96</x:String>
+                <x:String>DT</x:String>
+                <x:String>45</x:String>
+                <x:String>123</x:String>
+            </Picker.Items>
+        </Picker>
+        <Button Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"/>
+        <Label Text="0 руб" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="2"/>
+    </Grid>
+</ContentPage>

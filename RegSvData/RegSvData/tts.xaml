@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RegSvData.tts">
+    <Grid x:Name="Main_grid">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name="Label" Height="*"/>
+            <RowDefinition x:Name="Progres" Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Text="Text" VerticalTextAlignment="End" HorizontalTextAlignment="Center" FontSize="Large" x:Name="Text_m"/>
+        <ProgressBar IsEnabled="True" x:Name="prgs" x:Uid="ttrys"  Grid.Row="1" Progress="0"/>
+    </Grid>
+</ContentPage>
